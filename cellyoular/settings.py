@@ -80,8 +80,15 @@ WSGI_APPLICATION = 'cellyoular.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'sqlserver_ado',
+        'NAME': 'cellyoular',
+        'HOST': "SURFACE\\SQLEXPRESS",
+        'USER': 'py',
+        'PASSWORD': 'Steelers$1',
+        'OPTIONS': {
+                'provider': 'SQLOLEDB',
+                'use_legacy_date_fields': 'True'
+        },
     }
 }
 
