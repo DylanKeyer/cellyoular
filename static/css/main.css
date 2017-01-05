@@ -1,4 +1,9 @@
-{% load static}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("font-awesome.min.css");
+@import url("font-awesome.css");
+
+
+{% load static %}
 
 
 * {
@@ -14,27 +19,6 @@ body {
 	background-image: url('http://www.dcpl.info/wp-content/uploads/background-website-26-hd-wallpaper-background-and-wallpaper.jpg');
 }
 
-
-.col-1, .col-3 {
-	width: 25%;
-	float: left;
-	background-color: #333;
-	padding: 15px;
-    border: 1px solid black;
-    margin-top: 48px;
-    opacity: .9;
-}
-
-.col-2 {
-	float: left;
-	width: 50%;
-	background-color: #333;
-	padding: 15px;
-    border: 1px solid black;
-    margin-top: 48px;
-    opacity: .9;
-}
-
 ul.topnav {
 	list-style-type: none;
 	overflow: hidden;
@@ -43,6 +27,10 @@ ul.topnav {
     margin: 0px;
 	padding: 0px;
 	top: 0;
+}
+
+li a {
+	font-size: 36px;
 }
 
 ul.topnav li {float: left;
@@ -64,4 +52,8 @@ ul.topnav li.icon a {
 }
 
 ul.topnav li a:hover {background-color: #555;}
+
+footer {
+	position: bottom;
+}
 
