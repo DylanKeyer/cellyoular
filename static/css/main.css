@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 @import url("font-awesome.css");
 
 
-=======
->>>>>>> 2610830762e31ade50ff7d770a207c8853ce252f
 {% load static %}
 
 
@@ -17,15 +14,14 @@
 	padding: 0px;
 }
 
-body {
+body, header {
 	display:block;
 	background-color: black;
-	padding: 10px;
 }
 
 .pagewrapper {
 	display: block;
-	background-color: white;
+	background-color: black;
 	padding: 20px;
 }
 
@@ -39,7 +35,8 @@ ul.topnav {
 	top: 0;
 }
 
-li a {
+ul.social {
+	list-style-type: none;
 	font-size: 36px;
 }
 
