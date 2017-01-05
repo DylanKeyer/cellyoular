@@ -1,3 +1,36 @@
 <!DOCTYPE HTML>
-<html>
+
+{% load static %} <!-- New line -->
+
+<html lang="en-us">
+<head>
+<title> Cellyoular </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href = "{% static 'css/main.css' %}" rel='stylesheet' type ='text/css'/>
+
+</head>
+
+<body>
+
+<div class='navwrap'>
+<ul class="topnav" id="myTopnav">
+  <li class='icon'><a href="#menu">&#9776;</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+
+<div class='pagewrap'>
+
+<form action="/carrier/" method="post">
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+</div>
+
+</body>
+
 </html>
