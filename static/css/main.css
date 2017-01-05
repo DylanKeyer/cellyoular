@@ -1,4 +1,4 @@
-{% load static}
+{% load static %}
 
 
 * {
@@ -11,7 +11,14 @@
 
 body {
 	display:block;
-	background-image: url('http://www.dcpl.info/wp-content/uploads/background-website-26-hd-wallpaper-background-and-wallpaper.jpg');
+	background-color: black;
+	padding: 10px;
+}
+
+.pagewrapper {
+	display: block;
+	background-color: white;
+	padding: 20px;
 }
 
 

@@ -80,15 +80,12 @@ WSGI_APPLICATION = 'cellyoular.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sqlserver_ado',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'cellyoular',
-        'HOST': "SURFACE\\SQLEXPRESS",
         'USER': 'py',
         'PASSWORD': 'Steelers$1',
-        'OPTIONS': {
-                'provider': 'SQLOLEDB',
-                'use_legacy_date_fields': 'True'
-        },
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
