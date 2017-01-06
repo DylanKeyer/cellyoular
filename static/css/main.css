@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("font-awesome.min.css");
-@import url("font-awesome.css");
 
 
 {% load static %}
@@ -9,20 +6,13 @@
 * {
 	box-sizing: border-box;
 	font-family: tahoma;
-	color: #f2f2f2;;
+	color: white;
 	margin: 0px;
 	padding: 0px;
 }
 
 body, header {
-	display:block;
-	background-color: black;
-}
-
-.pagewrapper {
-	display: block;
-	background-color: black;
-	padding: 20px;
+	background-color: white;
 }
 
 ul.topnav {
@@ -35,13 +25,10 @@ ul.topnav {
 	top: 0;
 }
 
-ul.social {
-	list-style-type: none;
-	font-size: 36px;
+ul.topnav li {
+	float: left;
+	opacity: 1;
 }
-
-ul.topnav li {float: left;
-opacity: 1;}
 
 ul.topnav li a {
 	display: inline-block;
@@ -58,9 +45,17 @@ ul.topnav li.icon a {
 
 }
 
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {
+	background-color: #555;
+}
+
+ul.social li {
+	list-style-type: none;
+	font-size: 30px;
+}
 
 footer {
-	position: bottom;
+	position: fixed;
+	bottom: 0;
 }
 

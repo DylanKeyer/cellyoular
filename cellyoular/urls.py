@@ -1,6 +1,8 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from home import views
+import home.views
+import quote.views
+import about.views
 
 urlpatterns = [
     # Examples:
@@ -8,6 +10,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^quote/', 'quote.views.index', name='quote'),
-    url(r'^$', 'home.views.index', name='index'),
+    url(r'^quote/', quote.views.add_phone, name='quote'),
+    url(r'^$', home.views.index, name='index'),
+    url(r'^about/', about.views.index, name = 'about')
 ]
