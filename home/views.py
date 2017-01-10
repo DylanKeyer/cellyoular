@@ -7,4 +7,4 @@ from home.models import Phone
 
 def index(request):
 	
-    return render(request, 'home/index.html')
+    return render(request, 'home/index1.html')

@@ -12,6 +12,8 @@
 <body>
 
 <form action="quote/add_phone/" method="post">
+	{% csrf_token %}
+
     {{ form }}
     <input type="submit" name='submit' value="Submit" />
 </form>

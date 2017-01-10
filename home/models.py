@@ -1,8 +1,8 @@
 from django.db import models
 
+
 # Create your models here.
 class Phone(models.Model):
-	code = models.CharField(max_length=10, primary_key=True)
 	name = models.CharField(max_length=100, unique=True)
 	carrier = models.CharField(max_length=30)
 	price = models.IntegerField()

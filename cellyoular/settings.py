@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'quote',
     'home',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'cellyoular.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cellyoular',
+        'NAME': 'Cellyoular',
         'USER': 'py',
         'PASSWORD': 'Steelers$1',
         'HOST': 'localhost',

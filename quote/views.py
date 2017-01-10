@@ -19,4 +19,4 @@ def add_phone(request):
     else:
         form = PhoneForm()
 
-    return render(request, 'quote.html', {'form': form})
+    return render(request, 'quote/quote.html', {'form': form})
