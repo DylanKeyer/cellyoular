@@ -1,4 +1,46 @@
+<!DOCTYPE HTML>
+{% extends 'base.html' %}
+{% load static %} <!-- New line -->
+<html lang="en-us">
+   <head>
+      <title> Cellyoular </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../../static/css/bootstrap.css">
+      <script src='../../../static/js/jquery.min.js'></script>
+      <script src='../../../static/js/bootstrap.min.js'></script>
+      <style type="text/css">
 
+         .navbar.navbar-inverse {
+         margin-bottom: 0;
+         }
+         .navbar-fixed-bottom, .navbar-static-top {
+         opacity: 0.9;
+         border-radius: 0 !important;
+         -moz-border-radius: 0 !important;
+         }
+         .jumbotron {
+         margin-bottom: 0;
+         }
+         .carousel-caption {
+         position: absolute;
+         top: 0;
+         display: -webkit-box;
+         display: -moz-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-align: center;
+         -moz-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+         height: 100%;
+         transform: translate(-2%,-32%);
+         }
+      </style>
+   </head>
+   <!-- content starts here -->
    {% block body_block %}
       <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
          <div class="container-fluid">
@@ -92,3 +134,4 @@
          </div>
       </nav>
    {% endblock %}
+</html>

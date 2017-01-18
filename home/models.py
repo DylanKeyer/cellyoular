@@ -3,7 +3,8 @@ from django.db import models
 
 # Create your models here.
 class Phone(models.Model):
-	name = models.CharField(max_length=100, unique=True)
+	name = models.CharField(max_length=100)
+	code = models.CharField(max_length=7)
 	carrier = models.CharField(max_length=30)
 	price = models.IntegerField()
 	condition = models.CharField(max_length=8)

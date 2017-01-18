@@ -2,22 +2,72 @@
 
 {% load static %} <!-- New line -->
 
+{% load bootstrap %}
+
 <html lang="en-us">
 <head>
 <title> Cellyoular </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../static/css/bootstrap.css">
+<script src='../../../static/js/jquery.min.js'></script>
+<script src='../../../static/js/bootstrap.min.js'></script>
+<style>
 
+ul {
+	list-style: none;
+}
+
+</style>
 </head>
 
 <body>
 
+<form role="form">
+    <legend>Form Title</legend>
+    {% csrf_token %}
+    {{ form|bootstrap }}
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
 <form action="quote/add_phone/" method="post">
 	{% csrf_token %}
 
-    {{ form }}
-    <input type="submit" name='submit' value="Submit" />
-</form>
+    {{ form.non_field_errors }}
+    <div class="form-group">
+<div class="fieldWrapper">
+    {{ form.name.errors }}
+    <label for="{{ form.name.id_for_label }}">Model</label>
+    {{ form.name }}
+</div>
+</div>
+<div class="form-group">
+<div class="fieldWrapper">
+    {{ form.carrier.errors }}
+    <label for="{{ form.carrier.id_for_label }}">Carrier</label>
+    {{ form.carrier }}
+</div>
+</div>
 
+<div class="form-group">
+<div class="fieldWrapper">
+    {{ form.storage.errors }}
+    <label for="{{ form.storage.id_for_label }}">Storage</label>
+    {{ form.storage }}
+</div>
+</div>
+
+<div class="form-group">
+<div class="fieldWrapper">
+    {{ form.condition.errors }}
+    <label for="{{ form.condition.id_for_label }}">Condition</label>
+    {{ form.condition }}
+</div>
+</div>
+
+</form>
 
 </body>
 
